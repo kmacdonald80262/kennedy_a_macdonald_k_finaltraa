@@ -1,12 +1,30 @@
-//create jar, name jar, place string in jar
-//var firstName = "Alex";
+(function(){
+	"use strict";
+	
+	console.log("fired!!!");
 
-//alert is method(build in function in JS)
-//alert("Hello" + firstName);
+	var button = document.querySelector("#button");
+	var burgerCon = document.querySelector("#burgerCon");
 
-//modern JS
-//alert(`Hello ${firstName}`)
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slideToggle");
+		button.classList.toggle("expanded");
+	}
 
-//console.log("Hello" + firstName);
+	function closeMenu() {
 
-console.log("javascript linked up");
+		if (window.matchMedia("(min-width: 1024px)").matches && burgerCon.classList.contains('slideToggle') ) {
+		console.log("media query fired");
+		burgerCon.classList.remove('slideToggle');
+		button.classList.remove('expanded');
+		}
+
+	}
+
+	button.addEventListener("click", hamburgerMenu, false);
+
+	window.addEventListener("resize", closeMenu);
+
+
+		
+})();
