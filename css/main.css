@@ -2,5 +2,516 @@
 
 .hidden
 {
-	display: none;
+  display: none;
+}
+
+#siteContainer
+{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*HEADER SECTION*/
+
+/*MAIN NAVIGATION*/
+#mainNav
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+#mainNav button
+{
+  background: url(../images/burger.svg) center no-repeat;
+  width: 40px;
+  height: 30px;
+  border: 0px;
+  transition: all 400ms ease;
+  margin-left: auto;
+}
+
+#mainNav button.expanded
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#mainNav li a
+{
+  display: block;
+  padding: 10px 0 10px 0; /*trbl*/
+  color: #8ea75d;
+  text-align: center;
+}
+
+#mainNav li
+{
+  border-bottom: 1px solid #efefef;
+}
+
+#mainNav li:first-child
+{
+  border-top: 1px solid #efefef;
+}
+
+#mainNav li:last-child
+{
+  margin-bottom: 10px;
+}
+
+#burgerCon
+{
+  margin-top: 20px;
+  display: none;
+  margin-bottom: 20px;
+}
+
+
+#burgerCon.slideToggle
+{
+  display: block;
+}
+/*END OF MAIN NAVIGATION(BURGER MENU)*/
+
+#logo
+{
+  height: 140px;
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+/*END OF HEADER SECTION*/
+
+/*WELCOME (HEROIMAGE) SECTION*/
+#welcome
+{
+  background: url(../images/hero.jpg) no-repeat center;
+  height: 285px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 1200px;
+  position: relative;
+}
+
+#welcomeInfo
+{
+  background: rgba(255,255,255,0.5);
+  height: 175px;
+  width: 300px;
+  padding: 10px 10px 10px 20px; 
+  max-width: 970px;
+  margin-top: 50px;
+  margin-left: 40px;
+  position: absolute;
+}
+
+#welcomeInfo h2
+{
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  font-family: Tahoma;
+}
+
+#welcomeInfo h3
+{
+  font-size: 16px;
+  letter-spacing: .25px;
+  line-height: 29px;
+  color: white;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+/*END OF WELCOME SECTION*/
+
+
+/*PRODUCTS SECTION*/
+#prodBanner
+{
+  background-color: #5d7032;
+  height: 25px;
+  display: block;
+  max-width: 1200px;
+  margin-bottom: 10px;
+}
+
+#prodBanner h2
+{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/*MEETING INFORMATION/MAP*/
+#smallCon
+{
+  height: 175px;
+  margin: 20px;
+}
+#meeting
+{
+  background-color: #dfe2d6;
+  height: 175.24px;
+  margin-bottom: 10px;
+}
+
+#meeting h2
+{
+  font-size: 16px;
+  color: #5d6f33;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 20px;
+}
+
+#meeting h3
+{
+  font-size: 11px;
+  color: #5d6f33;
+  text-align: center;
+  line-height: 14px;
+}
+
+#map
+{
+  display: none;
+}
+
+/*PRODUCT IMAGES AND DESCRIPTIONS*/
+#mainCon
+{
+  max-width: 1200px;
+  color: #fff
+
+}
+
+#prodImg 
+{
+  height: 200px; 
+  margin: 20px;
+}
+
+#prodImg img
+{
+  border: 5px solid #d8ae58;
+}
+
+#prodText
+{
+  height: 125px;
+  display: block;
+  width: 275px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+#prodText h2
+{
+  color: #5d7032;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+#prodText h3
+{
+  color: black;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 15px;
+}
+/*END OF PRODUCTS SECTION*/
+
+/*ABOUT US SECTION*/
+.banner
+{
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  background-color: #e2e5da;
+  margin-top: -17px;
+}
+
+.banner h2
+{
+  display: flex;
+  color: #6c8235;
+  font-family: tahoma, calibri, sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+.banner img
+{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+#aboutText
+{
+  margin: 0 auto;
+  color: #4f5f27;
+  padding: 20px 20px 20px 20px;
+}
+
+#aboutText p
+{
+  
+  font-family: tahoma, calibri, sans-serif;
+  font-weight: bold;
+  color: #d8ae58;
+  font-size: 16px;
+  text-align: center;
+}
+
+#aboutText ul li
+{
+  padding: 10px 0px;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+/*EXECUTIVES SUB-SECTION*/
+#execText
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#execs
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#exec h2
+{
+  text-align: center;
+}
+.execHold
+{
+ flex: 1 1 100px;
+}
+
+#execImg
+{
+  background-color: grey;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin: 0 auto;
+}
+
+#execImg1
+{
+  background-color: grey;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin: 0 auto;
+}
+/*END OF EXECUTIVES SUB-SECTION*/
+
+
+/*SPONSORS SUB-SECTION*/
+#sponsor h2
+{
+  text-align: center;
+  margin-top: 40px;
+}
+
+#sponsorText
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 140px;
+  margin: 0 auto;
+}
+
+#sponsors
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sponsorHold
+{
+ flex: 1 1 200px;
+}
+
+#sponsorImg 
+{
+  height: 43px;
+  width: 140px;
+  margin: 0 auto;
+}
+
+#sponsorImg img
+{
+  height: 43px;
+  width: 140px;
+  margin: 0 auto;
+}
+
+#sponsorImg1 
+{
+  height: 63px;
+  width: 60px;
+  margin: 0 auto;
+}
+
+#sponsorImg1 img
+{
+  height: 63px;
+  width: 60px;
+  margin: 0 auto;
+}
+
+#sponsorImg6
+{
+  height: 43px;
+  width: 140px;
+  background-color: lightgrey;
+  margin: 0 auto; 
+}
+/*END OF SPONSORS SUB-SECTION*/
+
+@media screen and (min-width: 640px) {
+  
+  #products
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .prodHold
+  {
+    flex: 1 1 400px;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px){
+
+#mainNav
+{
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+#logo
+{
+  margin-left: 0px;
+}
+
+  #button
+  {
+    display: none;
+  }
+
+#hamMenu
+{
+  width: 734px;
+  height: 50px;
+  margin-top: 40px;
+
+}
+
+#smallCon
+{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#mainCon
+{
+  margin: 0 auto;
+}
+#map
+{
+  display: block;
+  width: 355px;
+  height: 175px;
+  margin-right: 40px;
+  margin-left: 109px;
+}
+
+#meeting
+{
+  height: 175px;
+  width: 593px;
+
+}
+
+#prodBanner
+{
+  margin-top: 10px;
+}
+
+#prodImg 
+{
+  margin: 0 auto;
+}
+
+ #mainHeader
+  {
+    display: flex;
+  }
+
+  #button
+  {
+    display: none;
+  }
+
+  #burgerCon
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mainNav li
+  {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+  }
+
+  #mainNav li a 
+  {
+    display: inline;
+    padding: 5px 0 5px 0;
+    color: #6d6d6c;
+  }
+
+  #welcome
+  {
+  background: url(../images/green-lake.jpg) no-repeat center;
+  height: 285px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 1200px;
+  position: relative; 
+  }
 }
