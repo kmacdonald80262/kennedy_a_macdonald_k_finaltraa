@@ -8,22 +8,26 @@
 <title>Thames River Anglers Association</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
 </head>
 
 <body>
   <div id="siteContainer">
     <h1 class="hidden">TRAA Website</h1>
-    <section id="mainNav">
-      <nav id="mainNav">
+    <div id="home"></div>
+    <section id="mainNavi">
+      <nav class="mainNav">
           <h2 class="hidden">Main Navigation</h2>
           <button id="button"></button>
           <div id="burgerCon">
             <ul id="burgerMenu">
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">PROJECTS</a></li>
-              <li><a href="#">NEWS</a></li>
-              <li><a href="#">CONTACT US</a></li>
-              <li><a href="#">LINKS</a></li>
+              <li><a href="#section1">ABOUT</a></li>
+              <li><a href="#section2">PROJECTS</a></li>
+              <li><a href="#section3">NEWS</a></li>
+              <li><a href="#section4">PAST EVENTS</a></li>
+              <li><a href="#section5">CONTACT US</a></li>
+              <li><a href="#section6">MEMBERSHIP</a></li>
             </ul>
               </div>
               </nav>
@@ -43,9 +47,9 @@
   <section id="smallCon">
     <div id="map"><img src="images/map.jpg" alt="map" height="175" width="355"></div>
     <div id="meeting"><h2>TRAA General Meeting<br>
-7:00PM - Wednesday, January 9, 2019</h2><h3>Why not start coming out to TRAA General Meetings?  That way you're up on the latest details on TRAA news, plans and events. As always, guests are always welcome.  If you're not a member feel free to drop in and check out what the TRAA is all about.
+7:00PM - Wednesday, January 9, 2019</h2><p>Why not start coming out to TRAA General Meetings?  That way you're up on the latest details on TRAA news, plans and events. As always, guests are always welcome.  If you're not a member feel free to drop in and check out what the TRAA is all about.</p><br>
 
-We meet at the Western Ontario Fish & Game Protective Association clubhouse at 790 Southdale Road, London Ontario.</h3></div>
+<p>We meet at the Western Ontario Fish & Game Protective Association clubhouse at 790 Southdale Road, London Ontario.</p></div>
   </section>
 
 <div id="prodBanner"><h2>PRODUCTS</h2></div>
@@ -85,8 +89,8 @@ We meet at the Western Ontario Fish & Game Protective Association clubhouse at 7
   </div>
 </div>
 <section class="banner">
-  <h2>About Us</h2>
-  <img id="ab" src="images/top-green.svg" alt="top arrow">
+  <h2 id="section1">About Us</h2>
+  <a href="#home" id="button2"></a>
 </section>
 </div>
 <section id="about">
@@ -148,37 +152,191 @@ We meet at the Western Ontario Fish & Game Protective Association clubhouse at 7
 
     <div class="sponsorHold">
       <div id="sponsorImg1"><img src="images/sponsors/angling-sports.png" alt="angling-sports logo"></div>
-      <div id="sponsorText"><h2>Before we could take the trailer to Try Recycling, we needed to get the spare tire for the trailer fixed. Pat Devincenzo, proprietor of Angling Sports, offered to get it repaired. The tire needed replacing and Pat took care of it. TRAA members recieve a discount equal to the tax on anthything in the store. Thanks Pat, your generosity is greatly appreciated.</h2></div>
+      <div id="sponsorText"><p>Before we could take the trailer to Try Recycling, we needed to get the spare tire for the trailer fixed. Pat Devincenzo, proprietor of Angling Sports, offered to get it repaired. The tire needed replacing and Pat took care of it. TRAA members recieve a discount equal to the tax on anthything in the store. Thanks Pat, your generosity is greatly appreciated.</p></div>
        </div> 
 
        <div class="sponsorHold">
       <div id="sponsorImg"><img src="images/sponsors/muma.png" alt="muma logo"></div>
-      <div id="sponsorText"><h2>The TRAA voted unanimously to re-name the TRAA trout hatchery honouring Keith Wales' memory and his unselfish support of the TRAA's work in the London area, in particular Komoka Creek. Special thanks go out to Muma Manufacturing in St. Thomas for donating the beautiful laser-cut aluminum sign.</h2></div>
+      <div id="sponsorText"><p>The TRAA voted unanimously to re-name the TRAA trout hatchery honouring Keith Wales' memory and his unselfish support of the TRAA's work in the London area, in particular Komoka Creek. Special thanks go out to Muma Manufacturing in St. Thomas for donating the beautiful laser-cut aluminum sign.</p></div>
        </div> 
 
        <div class="sponsorHold">
       <div id="sponsorImg"><img src="images/sponsors/guillevin.png" alt="guillevin logo"></div>
-      <div id="sponsorText"><h2>Members of the trout hatchery rotation know the woes we've had with lighting in the hatchery. Even with larger fixtures installed a few years ago, it was still frustrating on days when the mercury dipped below -15C and the fluorescent technology teased us with its dull flicker. Enter Mike Jeffries of Guillevin Greentech in London with nice set of bright and dependable LED fixtures. </h2></div>
+      <div id="sponsorText"><p>Members of the trout hatchery rotation know the woes we've had with lighting in the hatchery. Even with larger fixtures installed a few years ago, it was still frustrating on days when the mercury dipped below -15C and the fluorescent technology teased us with its dull flicker. Enter Mike Jeffries of Guillevin Greentech in London with nice set of bright and dependable LED fixtures. </p></div>
        </div> 
 
        <div class="sponsorHold">
       <div id="sponsorImg"><img src="images/sponsors/tryrecycling.png" alt="try recycling logo"></div>
-      <div id="sponsorText"><h2>After cleaning up the area around the TRAA shed and trout hatchery, our trailer was full and needed to be emptied. A big 'thank you' to Rick Vandersluis and Mike Seabrook of Try Recycling who allowed the TRAA to use their facility free of charge. </h2></div>
+      <div id="sponsorText"><p>After cleaning up the area around the TRAA shed and trout hatchery, our trailer was full and needed to be emptied. A big 'thank you' to Rick Vandersluis and Mike Seabrook of Try Recycling who allowed the TRAA to use their facility free of charge. </p></div>
        </div> 
 
        <div class="sponsorHold">
       <div id="sponsorImg6"></div>
-      <div id="sponsorText"><h2>Members of the trout hatchery rotation know the woes we've had with lighting in the hatchery. Even with larger fixtures installed a few years ago, it was still frustrating on days when the mercury dipped below -15C and the fluorescent technology teased us with its dull flicker. Enter Mike Jeffries of Guillevin Greentech in London with nice set of bright and dependable LED fixtures. </h2></div>
+      <div id="sponsorText"><p>Members of the trout hatchery rotation know the woes we've had with lighting in the hatchery. Even with larger fixtures installed a few years ago, it was still frustrating on days when the mercury dipped below -15C and the fluorescent technology teased us with its dull flicker. Enter Mike Jeffries of Guillevin Greentech in London with nice set of bright and dependable LED fixtures. </p></div>
        </div> 
-
-
     </div>  
   </div>
+</div>
+
+<div id="aboutCon">
+  <div id="aboutDiv">
+    <div class="aboutHold">
+      <div id="aboutImg2"><img src="images/about1.jpg" alt="stream fishing image"></div>
+      <div id="aboutText2"><p>In the spring of 1986 the TRAA was formed by anglers concerned with the state of the fishery in the Thames River watershed, particularly the dwindling smallmouth bass population in the North Thames River.<br>
+      The TRAA is not a fishing club, although most members are anglers and share fishing as a common interest. We are a "hands on" environmental group who likes to work at a grass roots level.</p></div>
+       </div> 
+
+    <div class="aboutHold">
+      <div id="aboutImg2"><img src="images/about2.jpg" alt="creek image"></div>
+      <div id="aboutText2"><p>The TRAA is a volunteer organization, governed by a formal constitution and by-laws. An elected Executive, with the guidence of the General Membership, sets the policies and direction for the TRAA.<br>
+      The TRAA has a history of always having a core group of active members supported by those who just want to be part of the solution. Either way, every member of the TRAA is active in their advocacy for the health of the Thames River watershed and its inhbitants.</p></div>
+    </div> 
+  </div>
+</div>
+
+<!--START OF PROJECTS CAROUSEL-->
+<section class="banner2">
+  <h2 class="bannerTitle" id="section2">Projects</h2>
+  <a href="#home" id="button2"></a>
+</section>
+
+<div class="slideshow-container">
+ <div class="slides">
+    <img class="scoop" id="photo" src="images/scoop.jpg" alt="scoop photo" style="width:100%">
+    <div class="text">
+      <h2 class="title">TRAA Trout Hatchery</h2>
+<br>
+      The Hatchery began in the mid-1980's as an outdoor upwelling box located adjacent to Komoka Creek on private property. While it was a simple and rustic affair, the TRAA enjoyed incredible egg hatching and fry survivability rates for several seasons.<br><a href="read.html">
+READ MORE</a></div>
+  </div>
+
+  <div class="slides">
+    <img src="images/water.JPG" id="photo" alt="water photo" style="width:100%">
+    <div class="text"><h2 class="title">TRAA Trout Hatchery</h2><br>
+      Rearing both brown and rainbow trout
+The TRAA first began rearing rainbow trout in an outdoor upwelling incubation box back in 1986. Since then we've successfully taken on both brown trout and brook trout eggs ...<br><a href="read.html">READ MORE</a>
+    </div>
+  </div>
+
+  <div class="slides">
+    <img src="images/brown-trout.jpg" id="photo" alt="brown trout photo" style="width:100%">
+    <div class="text"><h2 class="title">TRAA Walleye Hatchery</h2><br>
+      The TRAA and the Upper Thames River Conservation Authority (UTRCA), with the blessing of the Ministry of Natural Resources (MNR), agreed to the operation of a walleye hatchery in Fanshawe Conservation Area, just north-east of London, Ontario.<br><a href="read.html"> READ MORE</a>
+    </div>
+  </div>
+
+    <div class="slides">
+    <img src="images/stream.JPG" id="photo" alt="stream photo" style="width:100%">
+    <div class="text"><h2 class="title">TRAA Stream Rehabilitation</h2><br>
+The TRAA trout hatchery is fun and educational but the TRAA is not about stocking fish for a "put & take" style of fishery.
+We understand the connection between a healthy aquatic ecosystem and the sustainability of a naturally reproducing fish population, regardless of the species.<br><a href="read.html">READ MORE</a>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div id="projText">
+  <h2>"Hands on Environmentalism" is what we do ..."</h2>
+  <p>This is what sets the TRAA apart from other clubs and organizations. You'll find us right in the water clearing obstructions from streams, measuring returning salmonids & taking scale samples for DNA analysis, education through trout hatchery tours & stream walks, being a voice for the Thames River watershed & its inhabitants and the list goes on.</p>
+</div>
+
+<section class="banner3">
+  <h2 class="bannerTitle" id="section3">Newsletters</h2>
+  <a href="#home" id="button2"></a>
+</section>
+
+<div id="newsHero">
+  <img src="images/newsletters_hero.jpg" alt="lake cleanup">
+  <h2 id="newsBlurb">Take a stroll down memory lane by browsing through the TRAA Newsletter archive...</h2>
+  <div id="newsLinks">
+  <a href="assets/news/2009.pdf">2009</a>
+  <a href="assets/news/2008.pdf">2008</a>
+  <a href="assets/news/2007.pdf">2007</a>
+  <a href="assets/news/2006.pdf">2006</a>
+  <a href="assets/news/2005.pdf">2005</a>
+  <a href="assets/news/2004.pdf">2004</a>
+  <a href="assets/news/2003.pdf">2003</a>
+  <a href="assets/news/2001.pdf">2001</a>
+  <a href="assets/news/2000.pdf">2000</a>
+  <a href="assets/news/1999.pdf">1999</a>
+  <a href="assets/news/1997.pdf">1997</a>
+  <a href="assets/news/1996.pdf">1996</a>
+  <a href="assets/news/1986.pdf">1986</a>
+  </div>
+</div>
+<section id="newsArea">
+  <h2 class="hidden">About Our Newsletters</h2>
+  <div id="newsText">
+    <h2>The TRAA Newsletters have evolved over the years... </h2>
+    <p>The first newsletters were banged out manually on a typewriter and then copied about 100 times for distribution. These initial efforts were simple (no pictures or colour!) but they did the job. </p>
+
+    <p>The latest versions are electronic, emailed to members and other TRAA friends. They feature nice formatting, pictures and yes, colour!</p>
+
+    <p>The greatest challenge over the years has been getting editions published on time (or at all!). Such is life within a volunteer organization like the TRAA. You have to focus your energies on where they are most effective and a newsletter falls further down that priority list. </p>
+  </div>
+</section>
+
+<section class="banner2">
+  <h2 class="bannerTitle" id="section5">Contact Us</h2>
+  <a href="#home" id="button2"></a>
+</section>
+
+<div id="contactCon">
+  <div id="contact">
+    <div class="contactHold">
+      <div id="contactUs"><h2>There's a bunch of ways to get in touch with the TRAA.</h2><p>If you're with a like-minded organization or group looking for more information on the TRAA and its activities, or if you're an individual who would like to become involved with the activities undertaken by the TRAA, the TRAA would like to hear from you.</p></div>
+      <div id="contactForm">
+        <h2 class="hidden">Contact Form</h2>
+          <div id="content1">
+             <form id="contactForm" action="form.php" method="post">
+                    <input type="text" required id="name" name="fullName" size="1" placeholder="first name">
+
+                    <input type="text" required id="name" name="fullName" size="1" placeholder="last name">
+
+                    <input type="email" required id="email" size="30" placeholder="name@email.com">
+
+                    <textarea name="comments" id="comments" required cols="50" rows="8" placeholder="message"></textarea>
+
+                    <input id="submit" type="submit" value="SUBMIT">
+            </form>
+      </div>
+       </div> 
+     </div>
+    <div class="contactHold">
+      <div id="contactInfo"><p1>Come and talk to us at a TRAA General Meeting;  Guests are Welcome!</p1><br>
+        <p2>The TRAA meets every second Wednesday of each month. We always try to get the meetings started by 7:00pm so try to be there a few minutes beforehand. The venue is the Western Ontario Fish & Game Protective Association's clubhouse located at 790 Southdale Road East, London, Ontario. </p2>
+        <p3>TRAA Mailing Information</p3>
+        <p4>Send any cards, letters, (and cheques!) to:
+Thames River Anglers Association
+
+2202 Coronation Drive
+
+London, Ontario, N6G 0B9
+
+Note: This is a mailing address only. See below for the location of our TRAA General Meetings.</p4></div>
+    </div> 
+  </div>
+</div>
+
+<section class="banner2">
+  <h2 class="bannerTitle" id="section6">Membership</h2>
+  <a href="#home" id="button2"></a>
+</section>
+<div id="memberships">
+  <p1>Participate, Help Out, Have Fun and give a bit back to the Thames River watershed!</p1>
+  <p2>This is the BEST Membership Deal You can Buy!</p2>
+  <p3>Some people have a hard time paying to volunteer. Well if that's you, just give us $25.00 every year and we won't  bug you - much. You'll get a card that says your a TRAA member and you'll get periodic updates on what you're missing out on.</p3>
+</div>
+<div id="general"><p>$14.00/year for you and your whole immediate family! Come and attend a General Meeting, or <a href=""> Contact Us</a> to become a member.</p>
 </div>
 </div>
 
 
   <script src="js/main.js"></script>
+  <script src="js/master.js"></script>
 
 </body>
 
