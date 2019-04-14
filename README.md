@@ -1,5 +1,10 @@
 # Thames River Anglers Association
 
+**Welcome to the Thames River Anglers Association!**
+
+This is a student project; taking the original anglers.org website 
+and transforming it. Giving it a full redesign without losing any content and making it responsive
+for other devices!
 
 **Installation/Usage**
 
