@@ -53,3 +53,34 @@ function showSlides(n)
 }
   slides[slideIndex-1].style.display = "block"; 
 }
+
+
+(function(){
+	"use strict";
+	
+	console.log("fired!!!");
+
+	var button = document.querySelector("#drop");
+	var burgerCon = document.querySelector("#dropDown");
+
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slideToggle");
+		button.classList.toggle("expanded");
+	}
+
+	function closeMenu() {
+
+		if (window.matchMedia("(min-width: 1024px)").matches && burgerCon.classList.contains('slideToggle') ) {
+		console.log("media query fired");
+		burgerCon.classList.remove('slideToggle');
+		button.classList.remove('expanded');
+		}
+
+	}
+
+	button.addEventListener("click", hamburgerMenu, false);
+
+	window.addEventListener("resize", closeMenu);
+
+		
+})();

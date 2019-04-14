@@ -5,6 +5,8 @@
   display: none;
 }
 
+
+/*SET FONT SIZES*/
 h2
 {
   font-family: 'merriweatherbold_italic';
@@ -15,202 +17,134 @@ p
   font-family: 'latoregular';
 }
 
+/*ALL FONTS USED IN WEBSITE*/
 
 @font-face {
     font-family: 'merriweather_blackregular';
     src: url('../fonts/merriweather-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'merriweather_blackitalic';
     src: url('../fonts/merriweather-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'merriweatherbold';
     src: url('../fonts/merriweather-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'merriweatherbold_italic';
     src: url('../fonts/merriweather-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'merriweatheritalic';
     src: url('../fonts/merriweather-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'merriweather_lightregular';
     src: url('../fonts/merriweather-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'merriweather_lightitalic';
     src: url('../fonts/merriweather-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'merriweatherregular';
     src: url('../fonts/merriweather-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'lato_blackregular';
     src: url('../fonts/lato-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'lato_blackitalic';
     src: url('../fonts/lato-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'latobold';
     src: url('../fonts/lato-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'latobold_italic';
     src: url('../fonts/lato-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'lato_hairlineregular';
     src: url('../fonts/lato-hairline-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'lato_hairlineitalic';
     src: url('../fonts/lato-hairlineitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'latoitalic';
     src: url('../fonts/lato-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'lato_lightregular';
     src: url('../fonts/lato-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'lato_lightitalic';
     src: url('../fonts/lato-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'latoregular';
     src: url('../fonts/lato-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
+/*START OF WEBSITE*/
 
 #siteContainer
 {
@@ -218,7 +152,7 @@ p
   margin: 0 auto;
 }
 
-/*HEADER SECTION*/
+/*EXTRA SECTION*/
 
 .show-lightBox
 {
@@ -230,11 +164,12 @@ p
   display: none;
 }
 
-
 video
 {
   display: none;
 }
+
+/*HEADER SECTION*/
 
 /*MAIN NAVIGATION*/
 
@@ -318,6 +253,7 @@ video
   display: block;
 }
 
+
 #dropDown
 {
   margin-top: 20px;
@@ -328,7 +264,24 @@ video
 #drop
 {
   width: 200px;
-  height: 100px;
+  height: 50px;
+  background-color: #5d7032;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#drop p:hover
+{
+  color: #869d53;
+}
+
+#drop:hover
+{
+  border: 1px solid #869d53;
 }
 
 #dropDown.slideToggle
@@ -469,7 +422,6 @@ video
 {
   max-width: 1200px;
   background-color: #5d7032;
-  width: 5px solid #5d7032;
   height: 1px;
 }
 
@@ -526,14 +478,13 @@ video
 #pop
 {
   display: none;
-}
-#eventImg 
+}.eventImg 
 {
   height: 200px;
   margin: 0 auto; 
 }
 
-#eventImg img
+.proImg img
 {
   border: 5px solid #d8ae58;
   width: 275px;
@@ -541,14 +492,14 @@ video
   height: 200px;
 
 }
-  #eventImg img
+  .proImg img
 {
   margin: 0 auto;
   display: block;
   margin-top: 100px;
 }
 
-#eventText
+.proText
 {
   height: 125px;
   display: block;
@@ -557,7 +508,7 @@ video
   margin-top: 20px;
 }
 
-#eventPara h2
+#proPara h3
 {
   color: #5d7032;
   text-decoration: underline;
@@ -566,7 +517,7 @@ video
   margin: 20px 6px -50px 6px;
 }
 
-#eventText h2
+.proText h3
 {
   color: #5d7032;
   text-align: center;
@@ -575,7 +526,69 @@ video
   font-weight: bold;
 }
 
-#eventText h3
+.proText p
+{
+  color: black;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.proHold
+{
+  margin: 0 auto;
+  margin-bottom: 440px;
+}
+.eventImg 
+{
+  height: 200px;
+  margin: 0 auto; 
+}
+
+.eventImg img
+{
+  border: 5px solid #d8ae58;
+  width: 275px;
+  margin: 6px;
+  height: 200px;
+
+}
+  .eventImg img
+{
+  margin: 0 auto;
+  display: block;
+  margin-top: 100px;
+}
+
+.eventText
+{
+  height: 125px;
+  display: block;
+  width: 275px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#eventPara h3
+{
+  color: #5d7032;
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 6px -50px 6px;
+}
+
+.eventText h3
+{
+  color: #5d7032;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.eventText p
 {
   color: black;
   font-size: 14px;
@@ -791,6 +804,8 @@ video
   margin-top: 30px; 
 }
 /*END OF SPONSORS SUB-SECTION*/
+
+/*ABOUT SUB-SECTION TEXT*/
 .aboutText2 p
 {
   color: black;
@@ -1081,19 +1096,22 @@ video
   padding: 0px 10px 0px 10px;
 }
 
-#pastBut button
+#pastBut 
 {
   width: 200px;
-  height: 40px;
+  height: 20px;
   margin: 0 auto;
   background-color: #5d7032;
   border-radius: 10px;
 }
 
-#pastBut button a
+#pastBut a
 {
   text-decoration: none;
   color: white;
+  margin-left: 55px;
+  font-weight: bold;
+  font-size: 20px;
 }
 #newsText p
 {
@@ -1107,6 +1125,10 @@ video
   color: #5d7032;
 }
 
+/*END OF NEWSLETTER SECTION*/
+
+
+/*START OF CONTACT US SECTION*/
 #contactForm
 {
   display: flex;
@@ -1167,6 +1189,8 @@ form
   margin: 0 auto;
   height: 280px;
 }
+
+/*CONTACT PARAGRAPHS SUB-SECTION*/
 #contactpara1
 {
   color: #5d7032;
@@ -1221,6 +1245,9 @@ form
     flex-wrap: wrap;
 }
 
+/*END OF CONTACT US SECTION*/
+
+/*START OF MEMBERSHIPS SECTION*/
 #memImg img
 {
   display: none;
@@ -1290,6 +1317,9 @@ form
   color: #5d7032;
 }
 
+/*END OF MEMBERSHIPS SECTION*/
+
+/*START OF FOOTER*/
 #mainFooter
 {
   background-color: black;
@@ -1311,7 +1341,7 @@ form
   font-family: tahoma, calibri, sans-serif;
   font-size: 20px;
   text-align: center;
-  margin-right: 20px;
+  margin: 0 auto;
   margin-top: 17px;
 }
 
@@ -1319,6 +1349,7 @@ form
 {
   margin-top: 10px;
   margin-right: auto;
+  margin-right: 100px;
   width: 35px;
   height: 35px;
 }
@@ -1343,21 +1374,28 @@ form
   height: 28px;
   width: 40px;
   margin-top: 10px;
+  margin-left: auto;
 }
 
+/*START OF FOOTER LINKS SECTION*/
 #links
 {
   display: none;
 }
+/*END OF FOOTER SECTION*/
+
+/*START OF MEDIA QUERIES*/
+
+/*394 PX MEDIA QUERY*/
 @media screen and (min-width: 394px) {
   .prodImg img
 {
   margin: 0 auto;
   display: block;
 }
-
 }
 
+/*480 PX MEDIA QUERY*/
 @media screen and (min-width: 480px) {
 
 #welcome
@@ -1373,38 +1411,58 @@ form
 }
 }
 
-
+/*640 TABLET MEDIA QUERY*/
 @media screen and (min-width: 640px) {
   
-  #products
-  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
+#products
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#welcomeInfo h2
+{
+  font-size: 40px;
+}
 
-    #events
-  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
+#welcomeInfo h3
+{
+  font-size: 30px;
+}
+
+#meeting h2
+{
+  font-size: 20px;
+}
+
+#meeting p
+{
+  font-size: 16px;
+  line-height: 14px;
+}
+#events
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
   
- .text h2
- {
+.text h2
+{
   font-size: 32px;
   margin-bottom: -30px;
- }
+}
 
- .text 
- {
+.text 
+{
   font-size: 18px;
   line-height: 35px;
   margin-top: 5px;
- }
-  #smallCon
+}
+
+#smallCon
 {
   height: 175px;
   margin: 20px;
@@ -1412,28 +1470,25 @@ form
 }
 
 
-  .prodHold
-  {
-    flex: 1 1 400px;
-    display: inline-block;
-    margin: 0 auto;
-  }
+.prodHold
+{
+  flex: 1 1 400px;
+  display: inline-block;
+  margin: 0 auto;
+}
 
 #mainCon
 {
   margin: 0 auto;
 }
 
-
 #mainCon2
 {
   margin: 0 auto;
 }
 
-
 #contactInfo 
 {
-
   line-height: 20px;
   margin-top: 30px;
 }
@@ -1442,6 +1497,7 @@ form
 {
   margin-top: 40px;
 }
+
 #welcome
 {
   background: url(../images/hero-tablet.jpg) no-repeat center;
@@ -1478,9 +1534,9 @@ form
   cursor: pointer;
   font-size: 2em;
 }
-
 }
 
+/*1110 PX MEDIA QUERY*/
 @media screen and (min-width: 1110px){
 #pop
 {
@@ -1492,6 +1548,8 @@ form
 }
 }
 
+
+/*WEBSITE FULL SIZE 1020 PX MEDIA QUERY*/
 @media screen and (min-width: 1020px){
 
 #general p
@@ -1600,14 +1658,17 @@ form
     color: white;
   }
 
-
+#burgerMenuNav
+{
+  margin-top: 15px;
+  margin-left: 180px;
+}
 
 #burgerMenu a
 {
-  text-decoration: none;
-  font-weight: bold;
-  
+  text-decoration: none; 
 }
+
 .mainFooter h2
 {
   display: none;
@@ -1617,6 +1678,7 @@ form
 {
  display: none; 
 }
+
 #logo
 {
   order: -1;
@@ -1624,16 +1686,15 @@ form
   margin-left: 10px;
 }
 
-  #button
-  {
-    display: none;
-  }
+#button
+{
+  display: none;
+}
 
 #welcomeInfo
 {
   display: none;
 }
-
 
 #smallCon
 {
@@ -1667,6 +1728,7 @@ form
   font-size: 100px;
   margin-top: 45px;
 }
+
 .banner2
 {
   height: 195px;
@@ -1677,6 +1739,7 @@ form
   font-size: 100px;
   margin-top: 45px;
 }
+
 .banner3
 {
   height: 195px;
@@ -1687,6 +1750,7 @@ form
   font-size: 100px;
   margin-top: 45px;
 }
+
 .button2
 {
   margin-top: 80px;
@@ -1703,7 +1767,7 @@ form
 
 #popUp ul li
 {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 16px;
 }
 
@@ -1711,12 +1775,13 @@ form
 {
   font-size: 26px;
 }
+
 #pop
 {
-  width: 380px;
-  height: 345;
+  width: 440px;;
   margin-top: 20px;
 }
+
 .eventHold
 {
   margin: 0 auto;
@@ -1733,41 +1798,49 @@ form
   height: 220px;
   width: 220px;
 }
+
 .execImg1
 {
   height: 220px;
   width: 220px;
 }
+
 .execText h2
 {
   font-size: 24px;
   color: #d8ae58;
 }
+
 .execText h3
 {
   font-size: 24px;
 }
+
 #sponsor h2
 {
   font-size: 36px;
   color: #d8ae58;
 }
+
 .aboutImg2 img
 {
   height: 314px;
   width: 480px;
 }
+
 .aboutImg2 
 {
   height: 314px;
   width: 480px;
   margin: 0 auto;
 }
+
 .aboutText2
 {
   width: 460px;
-  height: 260px;
+  height: 300px;
 }
+
 .aboutText2 p
 {
   font-size: 20px;
@@ -1779,7 +1852,6 @@ form
 {
   height: 500px;
 }
-
 
 #projText
 {
@@ -1801,7 +1873,6 @@ form
 
 .text
 {
- 
   margin-left: 100px;
   height: 400px;
   bottom: 50px;
@@ -1828,11 +1899,13 @@ form
 {
   font-size: 36px;
 }
+
 #newsText p
 {
   font-size: 24px;
   line-height: 47px;
 }
+
 #newsText
 {
    margin: 0 auto;
@@ -1863,6 +1936,7 @@ form
 {
   margin: 0px;
 }
+
 #contactUs
 {
   max-width: 580px;
@@ -1870,10 +1944,12 @@ form
   height: 260px;
   line-height: 30px;
 }
+
 #contactUs h2
 {
   font-size: 26px;
 }
+
 #contactUs p
 {
   font-size: 24px;
@@ -1886,7 +1962,7 @@ form
 {
   width: 580px;
   margin-left: 0px;
-  height: 550;
+  height: 550px;
   padding: 0px 10px;
   font-size: 26px;
 }
@@ -1895,15 +1971,18 @@ input
 {
   height: 48px;
 }
+
 input, textarea
 {
   font-size: 26px;
 }
+
 textarea
 {
   height: 215px;
   font-weight: bold;
 }
+
 #submit
 {
   height: 50px;
@@ -1914,44 +1993,50 @@ textarea
   margin-left: auto;
   height: 500px;
 }
+
 #contactInfo
 {
   max-width: 900px;
   margin-left: 0px;
 }
+
 #contactpara1
 {
   font-size: 28px;
   max-width: 500px;
   line-height: 30px;
 }
+
 #contactpara2
 {
   font-size: 26px;
   line-height: 36px;
   max-width: 500px;
 }
+
 #contactpara3
 {
   font-size: 28px;
   line-height: 36px;
   max-width: 500px;
 }
+
 #contactpara4
 {
   font-size: 26px;
   line-height: 36px;
   max-width: 500px;
 }
+
 #mainCon
 {
   margin: 0 auto;
 }
+
 #map 
 {
   display: block;
   margin-right: 40px;
-  
 }
 
 #mempara1
@@ -1966,6 +2051,7 @@ textarea
   width: 800px;
   margin-top: 40px;
 }
+
 #mem
 {
   width: 1000px;
@@ -1978,10 +2064,12 @@ textarea
 {
   font-size: 24px;
 }
+
 #mempara3
 {
   font-size: 24px;
 }
+
 #memImg img
 {
   display: block;
@@ -2000,10 +2088,12 @@ textarea
   width: 355px;
   height: 310px;
 }
+
 #map
 {
   margin: 0 auto;
 }
+
 #meeting
 {
   height: 310px;
@@ -2037,45 +2127,52 @@ textarea
   margin: 0 auto;
 }
 
- #mainHeader
-  {
-    display: flex;
-  }
+#mainHeader
+{
+  display: flex;
+}
 
-  #button
-  {
-    display: none;
-  }
+#button
+{
+ display: none;
+}
 
-  #burgerConNav
-  {
-    display: flex;
-    flex-direction: column;
-  }
+#burgerConNav
+{
+  display: flex;
+  flex-direction: column;
+}
 
-  .mainNav li
-  {
-    border-bottom: none;
-    display: inline;
-    margin-left: 20px;
-  }
+.mainNav li
+{
+  border-bottom: none;
+  display: inline;
+  margin-left: 40px;
+}
 
 .mainNav ul
 {
   margin-top: 50px;
 }
-  .mainNav li a 
-  {
-    display: inline;
-    padding: 5px 0 5px 0;
-    color: #6d6d6c;
-  }
 
+.mainNav li a 
+{
+  display: inline;
+  padding: 5px 0 5px 0;
+  color: #6d6d6c;
+  font-family: 'merriweatherbold';
+}
+
+#burgerMenu
+{
+  margin-right: 50px;
+}
 
 #welcome
 {
   display: none;
 }
+
 .scoop
 {
   height: 500px;
